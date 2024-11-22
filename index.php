@@ -1,0 +1,124 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador PDF</title>
+    <!-- Incluir fuente Audrey desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Audrey&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #9c8d8c;  /* Gris claro de fondo */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centrado horizontal y vertical */
+            height: 100vh;
+            font-size: 25px;
+            color: white; /* Cambiar color de texto a blanco */
+            position: relative;
+            flex-direction: column;
+        }
+
+        /* Estilo para la línea vertical */
+        .vertical-line {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%); /* Centrar la línea */
+            width: 800px; /* Ancho de la línea (ajustable) */
+            background-color: black; /* Color de la línea */
+            z-index: -1; /* Coloca la línea detrás del contenido */
+        }
+
+        /* Estilo para el contenido dentro de la línea */
+        .content {
+            position: relative;
+            text-align: center;
+            z-index: 1; /* Asegura que el contenido esté encima de la línea */
+        }
+
+        /* Título con la fuente Audrey */
+        h1 {
+            font-family: 'Audrey', sans-serif; /* Fuente Audrey */
+            margin: 0;
+            padding: 20px;
+            font-size: 50px;
+            color: white;
+            margin-top: 20px; /* Mover el título más arriba */
+        }
+
+        /* Estilo para la tabla */
+        table {
+            margin-top: 40px;
+            border-collapse: collapse;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Estilo para las celdas */
+        td {
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        /* Estilos para los botones */
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Colores de los botones */
+        .btn1 {
+            background-color: #FF5733; /* Rojo */
+        }
+
+        .btn2 {
+            background-color: #33FF57; /* Verde */
+        }
+
+        .btn3 {
+            background-color: #3357FF; /* Azul */
+        }
+
+        .btn4 {
+            background-color: #FF33A1; /* Rosa */
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Línea vertical centrada -->
+    <div class="vertical-line"></div>
+    
+    <!-- Contenido -->
+    <div class="content">
+        <!-- Título grande -->
+        <h1>PIA SESV 2165169</h1>
+        <p>En la etapa hicimos distintas Evidencias de aprendizaje <br> 1.-Presentacion Etapa1 <br> 2.-Base de datos Escuela <br> 3.-Conexion de MySQL en Localhost <br> 4.-Conexion MySQL en pagina en linea</p>
+
+        <!-- Tabla de botones -->
+        <table>
+            <tr>
+                <td><a href="Etapa1.php" class="btn btn1">Enlace 1</a></td>
+                <td><a href="Etapa2.php" class="btn btn2">Enlace 2</a></td>
+            </tr>
+            <tr>
+                <td><a href="#" class="btn btn3">Enlace 3</a></td>
+                <td><a href="" class="btn btn4">Enlace 4</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
