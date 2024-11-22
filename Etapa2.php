@@ -50,6 +50,7 @@
     <div class="content">
         <h1>Visualizador PDF <br> ETAPA 2 Base de datos</h1>
         <embed src="PhpMyAdminEvidencia_compressed.pdf" width="900px" height="600px" type="application/pdf">
+            <a href="index.html">Volver a la pagina principal</a>
     </div>
 </body>
 </html>
